@@ -11,11 +11,22 @@ export const Home = () => {
     <div>
       <h1>Home</h1>
 
-      <section className="characters-section">
+      <section
+        className="characters-section"
+        style={{
+          width: "100%",
+          display: "flex",
+          flexWrap: "wrap",
+          backgroundColor: "tomato",
+          justifyContent: "space-between",
+        }}
+      >
         {characters.map((character) => {
           return (
             <div
               style={{
+                backgroundColor: "khaki",
+                padding: 10,
                 border: "10px solid black",
               }}
             >
