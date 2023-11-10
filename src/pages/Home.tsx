@@ -17,10 +17,35 @@ export const Home = () => {
             <div
               style={{
                 border: "10px solid black",
+                backgroundColor: "yellowgreen",
+                padding: 10,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
               }}
             >
-              <h3>{character.name}</h3>
-              <img src={character.image} alt={`image for ${character.name}`} />
+              <h3
+                style={{
+                  fontSize: 30,
+                  color: "white",
+                  margin: 0,
+                }}
+              >
+                {character.name}
+              </h3>
+              <p style={{ fontSize: 20, color: "white", margin: 0 }}>
+                Gender: {character.gender}
+              </p>
+              <p style={{ fontSize: 20, color: "white", margin: 0 }}>
+                Status: {character.status}
+              </p>
+              <img
+                src={character.image}
+                alt={`image for ${character.name}`}
+                style={{
+                  border: "10px solid white",
+                }}
+              />
             </div>
           );
         })}
